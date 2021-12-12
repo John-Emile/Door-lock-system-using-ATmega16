@@ -14,7 +14,7 @@ Developing a system to unlock a door using a password and generating an alarm if
 Compare Value = (Seconds * F_CPU)/Prescaler
 
 
-You can find a video in the compressed file attached which test the following cases :
+You can find a video in the attached which test the following cases :
 -	Entering the correct password.
 -	Entering password that contains the 0 digits.
 -	Entered the password wrong 3 times.
