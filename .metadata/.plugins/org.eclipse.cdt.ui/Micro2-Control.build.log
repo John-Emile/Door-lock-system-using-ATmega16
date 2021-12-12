@@ -1,0 +1,20 @@
+19:44:48 **** Incremental Build of configuration Debug for project Micro2-Control ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Micro2-Control.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   14880 bytes (90.8% Full)
+(.text + .data + .bootloader)
+
+Data:         87 bytes (8.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+19:44:49 Build Finished. 0 errors, 0 warnings. (took 1s.124ms)
+

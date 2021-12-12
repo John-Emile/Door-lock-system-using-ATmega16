@@ -1,0 +1,75 @@
+10:14:49 **** Incremental Build of configuration Debug for project Sol2 ****
+make all 
+Building file: ../ControlECU.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ControlECU.d" -MT"ControlECU.o" -c -o "ControlECU.o" "../ControlECU.c"
+In file included from ../micro_config.h:22,
+                 from ../ControlECU.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ControlECU.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+In file included from ../micro_config.h:22,
+                 from ../i2c.h:17,
+                 from ../external_eeprom.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../external_eeprom.c
+ 
+Building file: ../i2c.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"i2c.d" -MT"i2c.o" -c -o "i2c.o" "../i2c.c"
+In file included from ../micro_config.h:22,
+                 from ../i2c.h:17,
+                 from ../i2c.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../i2c.c
+ 
+Building file: ../timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"timer.d" -MT"timer.o" -c -o "timer.o" "../timer.c"
+In file included from ../micro_config.h:22,
+                 from ../timer.h:14,
+                 from ../timer.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../timer.c: In function 'Timer_setCallBack':
+../timer.c:240: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+In file included from ../micro_config.h:22,
+                 from ../uart.h:16,
+                 from ../uart.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../uart.c
+ 
+Building target: Sol2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Sol2.map -mmcu=atmega16 -o "Sol2.elf"  ./ControlECU.o ./external_eeprom.o ./i2c.o ./timer.o ./uart.o   
+Finished building target: Sol2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Sol2.elf  >"Sol2.lss"
+Finished building: Sol2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Sol2.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    6986 bytes (42.6% Full)
+(.text + .data + .bootloader)
+
+Data:         49 bytes (4.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+10:14:52 Build Finished. 0 errors, 6 warnings. (took 2s.524ms)
+

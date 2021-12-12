@@ -1,0 +1,702 @@
+12:46:02 **** Clean-only build of configuration Debug for project Micro2-Control ****
+make clean 
+rm -rf  ./application_micro2_test.o ./buzzer.o ./external_eeprom.o ./gpio.o ./lcd.o ./main2_test.o ./motor.o ./pwm_timer.o ./timer.o ./timer_delay.o ./twi.o ./uart.o  sizedummy  Micro2-Control.lss  ./application_micro2_test.d ./buzzer.d ./external_eeprom.d ./gpio.d ./lcd.d ./main2_test.d ./motor.d ./pwm_timer.d ./timer.d ./timer_delay.d ./twi.d ./uart.d  Micro2-Control.elf
+ 
+12:46:19 **** Build of configuration Debug for project Micro1-HMI ****
+make all 
+Building file: ../application_micro1_test.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"application_micro1_test.d" -MT"application_micro1_test.o" -c -o "application_micro1_test.o" "../application_micro1_test.c"
+In file included from ../application_micro1_test.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../application_micro1_test.c:15:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+Finished building: ../application_micro1_test.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"keypad.d" -MT"keypad.o" -c -o "keypad.o" "../keypad.c"
+Finished building: ../keypad.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building file: ../main1_test.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main1_test.d" -MT"main1_test.o" -c -o "main1_test.o" "../main1_test.c"
+In file included from ../main1_test.c:16:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main1_test.c:20:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+Finished building: ../main1_test.c
+ 
+Building file: ../timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"timer.d" -MT"timer.o" -c -o "timer.o" "../timer.c"
+../timer.c: In function 'TIMER_init':
+../timer.c:108: warning: enumeration value 'TIMER02_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:108: warning: enumeration value 'TIMER1_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:108: warning: enumeration value 'TIMER1_MODE_COMPARE_OCR1A' not handled in switch
+../timer.c:108: warning: enumeration value 'TIMER1_MODE_COMPARE_ICR1' not handled in switch
+../timer.c:108: warning: enumeration value 'TIMER1_MODE_FAST_PWM_ICR1' not handled in switch
+../timer.c:108: warning: enumeration value 'TIMER1_MODE_FAST_PWM_OCR1A' not handled in switch
+../timer.c:164: warning: enumeration value 'TIMER02_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:164: warning: enumeration value 'TIMER02_MODE_COMPARE' not handled in switch
+../timer.c:164: warning: enumeration value 'TIMER02_MODE_FAST_PWM' not handled in switch
+../timer.c:164: warning: enumeration value 'TIMER1_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:164: warning: enumeration value 'TIMER1_MODE_COMPARE_ICR1' not handled in switch
+../timer.c:164: warning: enumeration value 'TIMER1_MODE_FAST_PWM_ICR1' not handled in switch
+../timer.c:215: warning: enumeration value 'TIMER02_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:215: warning: enumeration value 'TIMER1_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:215: warning: enumeration value 'TIMER1_MODE_COMPARE_OCR1A' not handled in switch
+../timer.c:215: warning: enumeration value 'TIMER1_MODE_COMPARE_ICR1' not handled in switch
+../timer.c:215: warning: enumeration value 'TIMER1_MODE_FAST_PWM_ICR1' not handled in switch
+../timer.c:215: warning: enumeration value 'TIMER1_MODE_FAST_PWM_OCR1A' not handled in switch
+../timer.c: In function 'TIMER0_setCallback':
+../timer.c:256: warning: function return types not compatible due to 'volatile'
+../timer.c: In function 'TIMER1_setCallback':
+../timer.c:261: warning: function return types not compatible due to 'volatile'
+../timer.c: In function 'TIMER2_setCallback':
+../timer.c:266: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer.c
+ 
+Building file: ../timer_delay.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"timer_delay.d" -MT"timer_delay.o" -c -o "timer_delay.o" "../timer_delay.c"
+Finished building: ../timer_delay.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: Micro1-HMI.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Micro1-HMI.map -mmcu=atmega16 -o "Micro1-HMI.elf"  ./application_micro1_test.o ./gpio.o ./keypad.o ./lcd.o ./main1_test.o ./timer.o ./timer_delay.o ./uart.o   
+Finished building target: Micro1-HMI.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Micro1-HMI.elf  >"Micro1-HMI.lss"
+Finished building: Micro1-HMI.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Micro1-HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12744 bytes (77.8% Full)
+(.text + .data + .bootloader)
+
+Data:        215 bytes (21.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:46:22 **** Build of configuration Debug for project Micro2-Control ****
+make all 
+Building file: ../application_micro2_test.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"application_micro2_test.d" -MT"application_micro2_test.o" -c -o "application_micro2_test.o" "../application_micro2_test.c"
+In file included from ../application_micro2.h:21,
+                 from ../application_micro2_test.c:13:
+../external_eeprom.h:19:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../application_micro2.h:27,
+                 from ../application_micro2_test.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../application_micro2_test.c
+ 
+Building file: ../buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"buzzer.d" -MT"buzzer.o" -c -o "buzzer.o" "../buzzer.c"
+Finished building: ../buzzer.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+In file included from ../external_eeprom.c:15:
+../external_eeprom.h:19:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+Finished building: ../external_eeprom.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:19:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building file: ../main2_test.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main2_test.d" -MT"main2_test.o" -c -o "main2_test.o" "../main2_test.c"
+In file included from ../application_micro2.h:21,
+                 from ../main2_test.c:13:
+../external_eeprom.h:19:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../application_micro2.h:27,
+                 from ../main2_test.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main2_test.c
+ 
+Building file: ../motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"motor.d" -MT"motor.o" -c -o "motor.o" "../motor.c"
+Finished building: ../motor.c
+ 
+Building file: ../pwm_timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"pwm_timer.d" -MT"pwm_timer.o" -c -o "pwm_timer.o" "../pwm_timer.c"
+Finished building: ../pwm_timer.c
+ 
+Building file: ../timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"timer.d" -MT"timer.o" -c -o "timer.o" "../timer.c"
+../timer.c: In function 'TIMER_init':
+../timer.c:108: warning: enumeration value 'TIMER02_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:108: warning: enumeration value 'TIMER1_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:108: warning: enumeration value 'TIMER1_MODE_COMPARE_OCR1A' not handled in switch
+../timer.c:108: warning: enumeration value 'TIMER1_MODE_COMPARE_ICR1' not handled in switch
+../timer.c:108: warning: enumeration value 'TIMER1_MODE_FAST_PWM_ICR1' not handled in switch
+../timer.c:108: warning: enumeration value 'TIMER1_MODE_FAST_PWM_OCR1A' not handled in switch
+../timer.c:164: warning: enumeration value 'TIMER02_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:164: warning: enumeration value 'TIMER02_MODE_COMPARE' not handled in switch
+../timer.c:164: warning: enumeration value 'TIMER02_MODE_FAST_PWM' not handled in switch
+../timer.c:164: warning: enumeration value 'TIMER1_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:164: warning: enumeration value 'TIMER1_MODE_COMPARE_ICR1' not handled in switch
+../timer.c:164: warning: enumeration value 'TIMER1_MODE_FAST_PWM_ICR1' not handled in switch
+../timer.c:215: warning: enumeration value 'TIMER02_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:215: warning: enumeration value 'TIMER1_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:215: warning: enumeration value 'TIMER1_MODE_COMPARE_OCR1A' not handled in switch
+../timer.c:215: warning: enumeration value 'TIMER1_MODE_COMPARE_ICR1' not handled in switch
+../timer.c:215: warning: enumeration value 'TIMER1_MODE_FAST_PWM_ICR1' not handled in switch
+../timer.c:215: warning: enumeration value 'TIMER1_MODE_FAST_PWM_OCR1A' not handled in switch
+../timer.c: In function 'TIMER0_setCallback':
+../timer.c:256: warning: function return types not compatible due to 'volatile'
+../timer.c: In function 'TIMER1_setCallback':
+../timer.c:261: warning: function return types not compatible due to 'volatile'
+../timer.c: In function 'TIMER2_setCallback':
+../timer.c:266: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer.c
+ 
+Building file: ../timer_delay.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"timer_delay.d" -MT"timer_delay.o" -c -o "timer_delay.o" "../timer_delay.c"
+Finished building: ../timer_delay.c
+ 
+Building file: ../twi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"twi.d" -MT"twi.o" -c -o "twi.o" "../twi.c"
+Finished building: ../twi.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: Micro2-Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Micro2-Control.map -mmcu=atmega16 -o "Micro2-Control.elf"  ./application_micro2_test.o ./buzzer.o ./external_eeprom.o ./gpio.o ./lcd.o ./main2_test.o ./motor.o ./pwm_timer.o ./timer.o ./timer_delay.o ./twi.o ./uart.o   
+Finished building target: Micro2-Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Micro2-Control.elf  >"Micro2-Control.lss"
+Finished building: Micro2-Control.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Micro2-Control.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   14848 bytes (90.6% Full)
+(.text + .data + .bootloader)
+
+Data:         87 bytes (8.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:58:30 **** Incremental Build of configuration Debug for project Micro1-HMI ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Micro1-HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12744 bytes (77.8% Full)
+(.text + .data + .bootloader)
+
+Data:        215 bytes (21.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:58:31 **** Incremental Build of configuration Debug for project Micro2-Control ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Micro2-Control.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   14848 bytes (90.6% Full)
+(.text + .data + .bootloader)
+
+Data:         87 bytes (8.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:49:10 **** Build of configuration Debug for project Micro1-HMI ****
+make all 
+Building file: ../keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"keypad.d" -MT"keypad.o" -c -o "keypad.o" "../keypad.c"
+Finished building: ../keypad.c
+ 
+Building file: ../main1_test.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main1_test.d" -MT"main1_test.o" -c -o "main1_test.o" "../main1_test.c"
+In file included from ../main1_test.c:16:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main1_test.c:20:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+Finished building: ../main1_test.c
+ 
+Building target: Micro1-HMI.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Micro1-HMI.map -mmcu=atmega16 -o "Micro1-HMI.elf"  ./application_micro1_test.o ./gpio.o ./keypad.o ./lcd.o ./main1_test.o ./timer.o ./timer_delay.o ./uart.o   
+Finished building target: Micro1-HMI.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Micro1-HMI.elf  >"Micro1-HMI.lss"
+Finished building: Micro1-HMI.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Micro1-HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12752 bytes (77.8% Full)
+(.text + .data + .bootloader)
+
+Data:        215 bytes (21.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:49:14 **** Build of configuration Debug for project Micro2-Control ****
+make all 
+Building file: ../main2_test.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main2_test.d" -MT"main2_test.o" -c -o "main2_test.o" "../main2_test.c"
+In file included from ../application_micro2.h:21,
+                 from ../main2_test.c:13:
+../external_eeprom.h:19:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../application_micro2.h:27,
+                 from ../main2_test.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main2_test.c
+ 
+Building target: Micro2-Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Micro2-Control.map -mmcu=atmega16 -o "Micro2-Control.elf"  ./application_micro2_test.o ./buzzer.o ./external_eeprom.o ./gpio.o ./lcd.o ./main2_test.o ./motor.o ./pwm_timer.o ./timer.o ./timer_delay.o ./twi.o ./uart.o   
+Finished building target: Micro2-Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Micro2-Control.elf  >"Micro2-Control.lss"
+Finished building: Micro2-Control.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Micro2-Control.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   14856 bytes (90.7% Full)
+(.text + .data + .bootloader)
+
+Data:         87 bytes (8.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:49:58 **** Incremental Build of configuration Debug for project Micro1-HMI ****
+make all 
+Building file: ../main1_test.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main1_test.d" -MT"main1_test.o" -c -o "main1_test.o" "../main1_test.c"
+In file included from ../main1_test.c:16:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main1_test.c:20:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+Finished building: ../main1_test.c
+ 
+Building target: Micro1-HMI.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Micro1-HMI.map -mmcu=atmega16 -o "Micro1-HMI.elf"  ./application_micro1_test.o ./gpio.o ./keypad.o ./lcd.o ./main1_test.o ./timer.o ./timer_delay.o ./uart.o   
+Finished building target: Micro1-HMI.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Micro1-HMI.elf  >"Micro1-HMI.lss"
+Finished building: Micro1-HMI.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Micro1-HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12752 bytes (77.8% Full)
+(.text + .data + .bootloader)
+
+Data:        215 bytes (21.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:50:00 **** Incremental Build of configuration Debug for project Micro2-Control ****
+make all 
+Building file: ../main2_test.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main2_test.d" -MT"main2_test.o" -c -o "main2_test.o" "../main2_test.c"
+In file included from ../application_micro2.h:21,
+                 from ../main2_test.c:13:
+../external_eeprom.h:19:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../application_micro2.h:27,
+                 from ../main2_test.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main2_test.c
+ 
+Building target: Micro2-Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Micro2-Control.map -mmcu=atmega16 -o "Micro2-Control.elf"  ./application_micro2_test.o ./buzzer.o ./external_eeprom.o ./gpio.o ./lcd.o ./main2_test.o ./motor.o ./pwm_timer.o ./timer.o ./timer_delay.o ./twi.o ./uart.o   
+Finished building target: Micro2-Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Micro2-Control.elf  >"Micro2-Control.lss"
+Finished building: Micro2-Control.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Micro2-Control.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   14856 bytes (90.7% Full)
+(.text + .data + .bootloader)
+
+Data:         87 bytes (8.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:51:55 **** Incremental Build of configuration Debug for project Micro1-HMI ****
+make all 
+Building file: ../application_micro1_test.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"application_micro1_test.d" -MT"application_micro1_test.o" -c -o "application_micro1_test.o" "../application_micro1_test.c"
+In file included from ../application_micro1_test.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../application_micro1_test.c:15:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+Finished building: ../application_micro1_test.c
+ 
+Building target: Micro1-HMI.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Micro1-HMI.map -mmcu=atmega16 -o "Micro1-HMI.elf"  ./application_micro1_test.o ./gpio.o ./keypad.o ./lcd.o ./main1_test.o ./timer.o ./timer_delay.o ./uart.o   
+Finished building target: Micro1-HMI.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Micro1-HMI.elf  >"Micro1-HMI.lss"
+Finished building: Micro1-HMI.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Micro1-HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12764 bytes (77.9% Full)
+(.text + .data + .bootloader)
+
+Data:        215 bytes (21.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:51:58 **** Incremental Build of configuration Debug for project Micro2-Control ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Micro2-Control.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   14856 bytes (90.7% Full)
+(.text + .data + .bootloader)
+
+Data:         87 bytes (8.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:52:27 **** Incremental Build of configuration Debug for project Micro1-HMI ****
+make all 
+Building file: ../application_micro1_test.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"application_micro1_test.d" -MT"application_micro1_test.o" -c -o "application_micro1_test.o" "../application_micro1_test.c"
+In file included from ../application_micro1_test.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../application_micro1_test.c:15:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+Finished building: ../application_micro1_test.c
+ 
+Building target: Micro1-HMI.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Micro1-HMI.map -mmcu=atmega16 -o "Micro1-HMI.elf"  ./application_micro1_test.o ./gpio.o ./keypad.o ./lcd.o ./main1_test.o ./timer.o ./timer_delay.o ./uart.o   
+Finished building target: Micro1-HMI.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Micro1-HMI.elf  >"Micro1-HMI.lss"
+Finished building: Micro1-HMI.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Micro1-HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12788 bytes (78.1% Full)
+(.text + .data + .bootloader)
+
+Data:        215 bytes (21.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:52:29 **** Incremental Build of configuration Debug for project Micro2-Control ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Micro2-Control.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   14856 bytes (90.7% Full)
+(.text + .data + .bootloader)
+
+Data:         87 bytes (8.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:56:08 **** Incremental Build of configuration Debug for project Micro1-HMI ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Micro1-HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12788 bytes (78.1% Full)
+(.text + .data + .bootloader)
+
+Data:        215 bytes (21.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:56:09 **** Incremental Build of configuration Debug for project Micro2-Control ****
+make all 
+Building file: ../application_micro2_test.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"application_micro2_test.d" -MT"application_micro2_test.o" -c -o "application_micro2_test.o" "../application_micro2_test.c"
+In file included from ../application_micro2.h:21,
+                 from ../application_micro2_test.c:13:
+../external_eeprom.h:19:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../application_micro2.h:27,
+                 from ../application_micro2_test.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../application_micro2_test.c
+ 
+Building target: Micro2-Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Micro2-Control.map -mmcu=atmega16 -o "Micro2-Control.elf"  ./application_micro2_test.o ./buzzer.o ./external_eeprom.o ./gpio.o ./lcd.o ./main2_test.o ./motor.o ./pwm_timer.o ./timer.o ./timer_delay.o ./twi.o ./uart.o   
+Finished building target: Micro2-Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Micro2-Control.elf  >"Micro2-Control.lss"
+Finished building: Micro2-Control.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Micro2-Control.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   14878 bytes (90.8% Full)
+(.text + .data + .bootloader)
+
+Data:         87 bytes (8.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:56:49 **** Incremental Build of configuration Debug for project Micro1-HMI ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Micro1-HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12788 bytes (78.1% Full)
+(.text + .data + .bootloader)
+
+Data:        215 bytes (21.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:56:50 **** Incremental Build of configuration Debug for project Micro2-Control ****
+make all 
+Building file: ../application_micro2_test.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"application_micro2_test.d" -MT"application_micro2_test.o" -c -o "application_micro2_test.o" "../application_micro2_test.c"
+In file included from ../application_micro2.h:21,
+                 from ../application_micro2_test.c:13:
+../external_eeprom.h:19:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../application_micro2.h:27,
+                 from ../application_micro2_test.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../application_micro2_test.c
+ 
+Building target: Micro2-Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Micro2-Control.map -mmcu=atmega16 -o "Micro2-Control.elf"  ./application_micro2_test.o ./buzzer.o ./external_eeprom.o ./gpio.o ./lcd.o ./main2_test.o ./motor.o ./pwm_timer.o ./timer.o ./timer_delay.o ./twi.o ./uart.o   
+Finished building target: Micro2-Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Micro2-Control.elf  >"Micro2-Control.lss"
+Finished building: Micro2-Control.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Micro2-Control.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   14880 bytes (90.8% Full)
+(.text + .data + .bootloader)
+
+Data:         87 bytes (8.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:44:43 **** Incremental Build of configuration Debug for project Micro1-HMI ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Micro1-HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12788 bytes (78.1% Full)
+(.text + .data + .bootloader)
+
+Data:        215 bytes (21.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:44:45 **** Incremental Build of configuration Debug for project Micro2-Control ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Micro2-Control.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   14880 bytes (90.8% Full)
+(.text + .data + .bootloader)
+
+Data:         87 bytes (8.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:44:47 **** Incremental Build of configuration Debug for project Micro1-HMI ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Micro1-HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12788 bytes (78.1% Full)
+(.text + .data + .bootloader)
+
+Data:        215 bytes (21.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:44:48 **** Incremental Build of configuration Debug for project Micro2-Control ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Micro2-Control.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   14880 bytes (90.8% Full)
+(.text + .data + .bootloader)
+
+Data:         87 bytes (8.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

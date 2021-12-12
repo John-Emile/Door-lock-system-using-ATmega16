@@ -1,0 +1,100 @@
+22:40:27 **** Incremental Build of configuration Debug for project Final_UC2 ****
+make all 
+Building file: ../application_micro1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"application_micro1.d" -MT"application_micro1.o" -c -o "application_micro1.o" "../application_micro1.c"
+In file included from ../application_micro1.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../application_micro1.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"keypad.d" -MT"keypad.o" -c -o "keypad.o" "../keypad.c"
+Finished building: ../keypad.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:19:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building file: ../main1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main1.d" -MT"main1.o" -c -o "main1.o" "../main1.c"
+../main1.c:19:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+../main1.c: In function 'main':
+../main1.c:55: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+Finished building: ../main1.c
+ 
+Building file: ../timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"timer.d" -MT"timer.o" -c -o "timer.o" "../timer.c"
+../timer.c: In function 'TIMER_init':
+../timer.c:108: warning: enumeration value 'TIMER02_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:108: warning: enumeration value 'TIMER1_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:108: warning: enumeration value 'TIMER1_MODE_COMPARE_OCR1A' not handled in switch
+../timer.c:108: warning: enumeration value 'TIMER1_MODE_COMPARE_ICR1' not handled in switch
+../timer.c:108: warning: enumeration value 'TIMER1_MODE_FAST_PWM_ICR1' not handled in switch
+../timer.c:108: warning: enumeration value 'TIMER1_MODE_FAST_PWM_OCR1A' not handled in switch
+../timer.c:169: warning: enumeration value 'TIMER02_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:169: warning: enumeration value 'TIMER02_MODE_COMPARE' not handled in switch
+../timer.c:169: warning: enumeration value 'TIMER02_MODE_FAST_PWM' not handled in switch
+../timer.c:169: warning: enumeration value 'TIMER1_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:169: warning: enumeration value 'TIMER1_MODE_COMPARE_ICR1' not handled in switch
+../timer.c:169: warning: enumeration value 'TIMER1_MODE_FAST_PWM_ICR1' not handled in switch
+../timer.c:225: warning: enumeration value 'TIMER02_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:225: warning: enumeration value 'TIMER1_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:225: warning: enumeration value 'TIMER1_MODE_COMPARE_OCR1A' not handled in switch
+../timer.c:225: warning: enumeration value 'TIMER1_MODE_COMPARE_ICR1' not handled in switch
+../timer.c:225: warning: enumeration value 'TIMER1_MODE_FAST_PWM_ICR1' not handled in switch
+../timer.c:225: warning: enumeration value 'TIMER1_MODE_FAST_PWM_OCR1A' not handled in switch
+../timer.c: In function 'TIMER0_setCallback':
+../timer.c:268: warning: function return types not compatible due to 'volatile'
+../timer.c: In function 'TIMER1_setCallback':
+../timer.c:273: warning: function return types not compatible due to 'volatile'
+../timer.c: In function 'TIMER2_setCallback':
+../timer.c:278: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+../uart.c:23: warning: return type defaults to 'int'
+../uart.c: In function 'ISR':
+../uart.c:23: warning: type of '__vector_11' defaults to 'int'
+Finished building: ../uart.c
+ 
+Building target: Final_UC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Final_UC2.map -mmcu=atmega16 -o "Final_UC2.elf"  ./application_micro1.o ./gpio.o ./keypad.o ./lcd.o ./main1.o ./timer.o ./uart.o   
+Finished building target: Final_UC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Final_UC2.elf  >"Final_UC2.lss"
+Finished building: Final_UC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Final_UC2.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   11430 bytes (69.8% Full)
+(.text + .data + .bootloader)
+
+Data:        116 bytes (11.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+22:40:30 Build Finished. 0 errors, 27 warnings. (took 2s.912ms)
+

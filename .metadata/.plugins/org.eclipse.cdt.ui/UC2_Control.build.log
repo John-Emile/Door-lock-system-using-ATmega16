@@ -1,0 +1,41 @@
+12:33:11 **** Incremental Build of configuration Debug for project UC2_Control ****
+make all 
+Building file: ../application_micro2_test.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"application_micro2_test.d" -MT"application_micro2_test.o" -c -o "application_micro2_test.o" "../application_micro2_test.c"
+In file included from ../application_micro2.h:21,
+                 from ../application_micro2_test.c:13:
+../external_eeprom.h:19:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../application_micro2.h:27,
+                 from ../application_micro2_test.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../application_micro2_test.c
+ 
+Building target: UC2_Control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,UC2_Control.map -mmcu=atmega16 -o "UC2_Control.elf"  ./application_micro2_test.o ./buzzer.o ./external_eeprom.o ./gpio.o ./lcd.o ./main2_test.o ./motor.o ./pwm_timer.o ./timer.o ./timer_delay.o ./twi.o ./uart.o   
+Finished building target: UC2_Control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S UC2_Control.elf  >"UC2_Control.lss"
+Finished building: UC2_Control.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 UC2_Control.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   14848 bytes (90.6% Full)
+(.text + .data + .bootloader)
+
+Data:         87 bytes (8.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+12:33:13 Build Finished. 0 errors, 2 warnings. (took 1s.972ms)
+

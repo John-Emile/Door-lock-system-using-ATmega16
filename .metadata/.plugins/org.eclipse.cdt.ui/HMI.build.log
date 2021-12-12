@@ -1,0 +1,104 @@
+12:27:45 **** Build of configuration Debug for project HMI ****
+make all 
+Building file: ../application_micro1_test.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"application_micro1_test.d" -MT"application_micro1_test.o" -c -o "application_micro1_test.o" "../application_micro1_test.c"
+In file included from ../application_micro1_test.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../application_micro1_test.c:15:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+Finished building: ../application_micro1_test.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"keypad.d" -MT"keypad.o" -c -o "keypad.o" "../keypad.c"
+Finished building: ../keypad.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building file: ../main1_test.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main1_test.d" -MT"main1_test.o" -c -o "main1_test.o" "../main1_test.c"
+In file included from ../main1_test.c:16:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main1_test.c:20:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+Finished building: ../main1_test.c
+ 
+Building file: ../timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"timer.d" -MT"timer.o" -c -o "timer.o" "../timer.c"
+../timer.c: In function 'TIMER_init':
+../timer.c:108: warning: enumeration value 'TIMER02_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:108: warning: enumeration value 'TIMER1_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:108: warning: enumeration value 'TIMER1_MODE_COMPARE_OCR1A' not handled in switch
+../timer.c:108: warning: enumeration value 'TIMER1_MODE_COMPARE_ICR1' not handled in switch
+../timer.c:108: warning: enumeration value 'TIMER1_MODE_FAST_PWM_ICR1' not handled in switch
+../timer.c:108: warning: enumeration value 'TIMER1_MODE_FAST_PWM_OCR1A' not handled in switch
+../timer.c:164: warning: enumeration value 'TIMER02_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:164: warning: enumeration value 'TIMER02_MODE_COMPARE' not handled in switch
+../timer.c:164: warning: enumeration value 'TIMER02_MODE_FAST_PWM' not handled in switch
+../timer.c:164: warning: enumeration value 'TIMER1_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:164: warning: enumeration value 'TIMER1_MODE_COMPARE_ICR1' not handled in switch
+../timer.c:164: warning: enumeration value 'TIMER1_MODE_FAST_PWM_ICR1' not handled in switch
+../timer.c:215: warning: enumeration value 'TIMER02_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:215: warning: enumeration value 'TIMER1_MODE_PWM_PHASE_CORRECT' not handled in switch
+../timer.c:215: warning: enumeration value 'TIMER1_MODE_COMPARE_OCR1A' not handled in switch
+../timer.c:215: warning: enumeration value 'TIMER1_MODE_COMPARE_ICR1' not handled in switch
+../timer.c:215: warning: enumeration value 'TIMER1_MODE_FAST_PWM_ICR1' not handled in switch
+../timer.c:215: warning: enumeration value 'TIMER1_MODE_FAST_PWM_OCR1A' not handled in switch
+../timer.c: In function 'TIMER0_setCallback':
+../timer.c:256: warning: function return types not compatible due to 'volatile'
+../timer.c: In function 'TIMER1_setCallback':
+../timer.c:261: warning: function return types not compatible due to 'volatile'
+../timer.c: In function 'TIMER2_setCallback':
+../timer.c:266: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer.c
+ 
+Building file: ../timer_delay.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"timer_delay.d" -MT"timer_delay.o" -c -o "timer_delay.o" "../timer_delay.c"
+Finished building: ../timer_delay.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: HMI.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,HMI.map -mmcu=atmega16 -o "HMI.elf"  ./application_micro1_test.o ./gpio.o ./keypad.o ./lcd.o ./main1_test.o ./timer.o ./timer_delay.o ./uart.o   
+Finished building target: HMI.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S HMI.elf  >"HMI.lss"
+Finished building: HMI.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12726 bytes (77.7% Full)
+(.text + .data + .bootloader)
+
+Data:        209 bytes (20.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+12:27:48 Build Finished. 0 errors, 26 warnings. (took 2s.951ms)
+

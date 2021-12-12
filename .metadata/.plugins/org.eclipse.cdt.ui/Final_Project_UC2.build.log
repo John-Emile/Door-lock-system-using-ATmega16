@@ -1,0 +1,38 @@
+13:41:24 **** Incremental Build of configuration Debug for project Final_Project_UC2 ****
+make all 
+Building file: ../application_micro2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"application_micro2.d" -MT"application_micro2.o" -c -o "application_micro2.o" "../application_micro2.c"
+In file included from ../application_micro2.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../application_micro2.c: In function 'APP_receivePassword':
+../application_micro2.c:76: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+Finished building: ../application_micro2.c
+ 
+Building target: Final_Project_UC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Final_Project_UC2.map -mmcu=atmega16 -o "Final_Project_UC2.elf"  ./application_micro2.o ./buzzer.o ./external_eeprom.o ./gpio.o ./lcd.o ./main2.o ./motor.o ./pwm_timer.o ./timer.o ./twi.o ./uart.o   
+Finished building target: Final_Project_UC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Final_Project_UC2.elf  >"Final_Project_UC2.lss"
+Finished building: Final_Project_UC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Final_Project_UC2.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   15802 bytes (96.4% Full)
+(.text + .data + .bootloader)
+
+Data:        180 bytes (17.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+13:41:26 Build Finished. 0 errors, 2 warnings. (took 2s.15ms)
+

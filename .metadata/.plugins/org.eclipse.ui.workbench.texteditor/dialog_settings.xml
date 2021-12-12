@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value=""/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="APP_REQUIRED_PASSWORD_NUMBER_OF_DIGITS"/>
+			<item value="g_first_time_pass"/>
+			<item value="g_menuChoice"/>
+			<item value="password_check"/>
+			<item value="eeprom_pass"/>
+			<item value="status"/>
+			<item value="g_trial_times"/>
+			<item value="g_first_time_flag"/>
+			<item value="g_change"/>
+			<item value="do"/>
+			<item value="PASSWORDS_MATCHED"/>
+			<item value="password_matched"/>
+			<item value="g_first_password"/>
+			<item value="first_time_flag"/>
+			<item value="menuOption1"/>
+		</list>
+		<list key="replacehistory">
+			<item value=""/>
+			<item value="g_status"/>
+			<item value="checkStatus"/>
+			<item value="eeprom_pass"/>
+			<item value="g_first_time_flag"/>
+			<item value="menuOption"/>
+			<item value="menuOption1"/>
+			<item value="PWM"/>
+			<item value="g_callbackTimerPtr"/>
+			<item value="a_second_pass_Ptr"/>
+			<item value="a_first_pass_Ptr"/>
+			<item value="a_password_entry_Ptr"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1124"/>
+		<item key="DIALOG_Y_ORIGIN" value="311"/>
+		<item key="DIALOG_WIDTH" value="284"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

@@ -1,0 +1,38 @@
+12:33:09 **** Incremental Build of configuration Debug for project UC1_HMI ****
+make all 
+Building file: ../application_micro1_test.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"application_micro1_test.d" -MT"application_micro1_test.o" -c -o "application_micro1_test.o" "../application_micro1_test.c"
+In file included from ../application_micro1_test.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../application_micro1_test.c:15:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+Finished building: ../application_micro1_test.c
+ 
+Building target: UC1_HMI.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,UC1_HMI.map -mmcu=atmega16 -o "UC1_HMI.elf"  ./application_micro1_test.o ./gpio.o ./keypad.o ./lcd.o ./main1_test.o ./timer.o ./timer_delay.o ./uart.o   
+Finished building target: UC1_HMI.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S UC1_HMI.elf  >"UC1_HMI.lss"
+Finished building: UC1_HMI.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 UC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   12744 bytes (77.8% Full)
+(.text + .data + .bootloader)
+
+Data:        215 bytes (21.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+12:33:11 Build Finished. 0 errors, 2 warnings. (took 1s.653ms)
+

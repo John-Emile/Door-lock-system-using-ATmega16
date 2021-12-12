@@ -1,0 +1,46 @@
+22:41:30 **** Incremental Build of configuration Debug for project Final_UC1 ****
+make all 
+Building file: ../main1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main1.d" -MT"main1.o" -c -o "main1.o" "../main1.c"
+../main1.c:19:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+../main1.c: In function 'main':
+../main1.c:57: warning: pointer targets in passing argument 1 of 'UART_sendString' differ in signedness
+Finished building: ../main1.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+../uart.c:23: warning: return type defaults to 'int'
+../uart.c: In function 'ISR':
+../uart.c:23: warning: type of '__vector_11' defaults to 'int'
+Finished building: ../uart.c
+ 
+Building target: Final_UC1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Final_UC1.map -mmcu=atmega16 -o "Final_UC1.elf"  ./application_micro1.o ./gpio.o ./keypad.o ./lcd.o ./main1.o ./timer.o ./uart.o   
+Finished building target: Final_UC1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Final_UC1.elf  >"Final_UC1.lss"
+Finished building: Final_UC1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Final_UC1.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   11446 bytes (69.9% Full)
+(.text + .data + .bootloader)
+
+Data:        124 bytes (12.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+22:41:34 Build Finished. 0 errors, 4 warnings. (took 4s.329ms)
+
